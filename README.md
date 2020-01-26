@@ -1,4 +1,4 @@
-"# endpoints" 
+"# endpoints backend readme" 
 
 This is a springboot back end service that exposes endpoints for conversions.
 After downloading and starting the application in the ide of your choice or via cmd.
