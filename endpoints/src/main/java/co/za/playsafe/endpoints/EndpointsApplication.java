@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-
+@EnableAutoConfiguration
 @EnableSwagger2
 @SpringBootApplication
 @ComponentScan("co.za.playsafe")
