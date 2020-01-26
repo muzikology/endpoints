@@ -1,0 +1,46 @@
+#zuul:
+#    host:
+#        max-total-connections: 1000
+#        max-per-route-connections: 100
+#    semaphore:
+#        max-semaphores: 500
+#hystrix:
+#    command:
+#        default:
+#            execution:
+#                isolation:
+#                    thread:
+#                        timeoutInMilliseconds: 10000
+#
+#management:
+#    security:
+#        roles: ADMIN
+#    context-path: /zuulproxy
+#    info:
+#        git:
+#            mode: full
+#    health:
+#        mail:
+#            enabled: false
+#spring:
+#    application:
+#        name: endpoints
+#    profiles:
+#        active: dev
+#    jackson:
+#        serialization.write_dates_as_timestamps: false
+#    jpa:
+#        open-in-view: false
+#        hibernate:
+#            ddl-auto: update
+#            naming:
+#                physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+#                implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+#security:
+#    basic:
+#        enabled: true
+#server:
+#    session:
+#        cookie:
+#            http-only: true
+#application:

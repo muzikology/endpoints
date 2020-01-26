@@ -1,0 +1,40 @@
+#logging:
+#    level:
+#        ROOT: DEBUG
+#        co.za.playsafe: DEBUG
+#    jackson:
+#        serialization.indent_output: true
+#spring:
+#    profiles:
+#        active: dev
+#    datasource:
+#        type: com.zaxxer.hikari.HikariDataSource
+#        url: jdbc:mysql://127.0.0.1:3306/endpoints?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+#        username: root
+#        password: J@vad3v
+#        hikari:
+#            data-source-properties:
+#                cachePrepStmts: true
+#                prepStmtCacheSize: 250
+#                prepStmtCacheSqlLimit: 2048
+#                useServerPrepStmts: true
+#    jpa:
+#        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#        database: MYSQL
+#        show-sql: true
+#        properties:
+#            hibernate.id.new_generator_mappings: true
+#            hibernate.cache.use_second_level_cache: false
+#            hibernate.cache.use_query_cache: false
+#            hibernate.generate_statistics: true
+#            hibernate.cache.region.factory_class: com.hazelcast.hibernate.HazelcastCacheRegionFactory
+#            hibernate.cache.hazelcast.instance_name: endpoints
+#            hibernate.cache.use_minimal_puts: true
+#            hibernate.cache.hazelcast.use_lite_member: true
+#            ddl-auto: update
+#    thymeleaf:
+#         mode: LEGACYHTML5
+#         cache: false
+#server:
+#    port: 8080
+#application:
